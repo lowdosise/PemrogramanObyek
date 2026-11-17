@@ -6,11 +6,11 @@ public enum AccountType {
     private String code;
     private double interestRate;
 
-
     private AccountType(String code, double interestRate) {
         this.code = code;
         this.interestRate = interestRate;
     }
+
 
     public String getCode() {
         return code;
@@ -32,7 +32,7 @@ public enum AccountType {
 
     public static void main(String[] args) {
         System.out.println("=== Daftar Jenis Akun Bank ===");
-        
+    
         for (AccountType acc : AccountType.values()) {
             System.out.println("Nama : " + acc);
             System.out.println("Kode : " + acc.getCode());
